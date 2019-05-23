@@ -15,6 +15,7 @@ import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 
+import org.hibernate.annotations.Proxy;
 import org.springframework.format.annotation.DateTimeFormat;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
@@ -30,6 +31,7 @@ import com.querydsl.core.annotations.QueryEntity;
 @NamedQueries({ @NamedQuery(name = "findAllRdsUsers1", query = "SELECT rUsrs FROM RdsUsers rUsrs "),
 		@NamedQuery(name = "findUniqueRdsUsersBYUsername2", query = "SELECT rUsrs FROM RdsUsers rUsrs WHERE   rUsrs.username = :username "),
 		@NamedQuery(name = "findUniqueRdsUsersBYEmail4", query = "SELECT rUsrs FROM RdsUsers rUsrs WHERE   rUsrs.email = :email ") })
+@Proxy(lazy=false)
 public class RdsUsers implements Serializable
 
 {
