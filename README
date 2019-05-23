@@ -1,1 +1,40 @@
-Retail Store Discount System.
+Retail Store DisRetail Store Discount App.
+
+
+Instruction for running the app:
+Download the folder .
+From terminal : mvn spring-boot:run 
+It will run the project and bootstrap initial data.
+N.B. My development environment is Mac and Ubuntu , so the commands may be biased. 
+
+
+| URL                                  | Type | Purpose | Comment                            |
+|:------------------------------------:|:----:|:-------:|:----------------------------------:|
+|: http:localhost:9191                :|: GET:|:Flat HTM page , with links and endpoint type:|
+|: http:localhost:9191/getRdsUsers/?page=0&size=100:|: returns list of users :| GET:|:type:|
+
+http:localhost:9191/invDisc/1
+
+GET
+Replace 1 with any invoice id you want to get the discount for 
+http://localhost:9191/findAllRdsInvoice1
+
+GET
+Find all invoices 
+
+
+
+
+
+For Testing please change the following : 
+File: RetailDiscountSystem/src/main/resources/application.properties
+Change : data.load=false
+Then change to project root : 
+cd ../../../
+mvn  verify <ENTER>
+  ,After the test report printed on the terminal , enter the following url on the brwoser to examin the code and graph
+Comment : I could not write enough test codes. 
+Coverage URL : 
+file:///<Path_TO_THE PROJECT >/RetailDiscountSystem/target/site/jacoco/index.html
+
+count System.
