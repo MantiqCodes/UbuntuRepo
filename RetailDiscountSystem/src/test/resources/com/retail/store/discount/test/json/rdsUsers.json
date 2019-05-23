@@ -1,0 +1,16 @@
+{
+	"id":1000,
+	"firstName": "Tim",
+	"lastName": "Schildt",
+	"username": "Timb0099223344",
+	"password": "Schildt0099223344",
+	"email": "Tim.0099223344@live.come",
+	"address": "Tim Schildt  Amsterdam , Netherlands",
+	"userType": "Customer",
+	"phone": "0099223344",
+	"city": "Amsterdam",
+	"country": "Netherlands",
+	"isActive":1,
+	"activeDate": "Sat, 31 Dec 2016 20:00:00 GMT",
+	"entDate": "Tue, 21 May 2019 03:19:42 GMT"
+}
