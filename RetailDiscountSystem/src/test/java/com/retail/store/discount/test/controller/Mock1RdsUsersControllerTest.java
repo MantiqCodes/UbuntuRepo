@@ -1,4 +1,4 @@
-//package com.retail.store.discount.test.controller;
+package com.retail.store.discount.test.controller;
 
 //import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
 //import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.print;
@@ -29,8 +29,8 @@
 //@SpringBootTest
 //@ActiveProfiles("test")
 //@AutoConfigureMockMvc
-//public class Mock1RdsUsersControllerTest
-//{
+public class Mock1RdsUsersControllerTest
+{
 
 //	@Autowired
 //	ObjectMapper objectMapper;
